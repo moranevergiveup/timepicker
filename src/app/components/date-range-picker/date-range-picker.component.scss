@@ -1,0 +1,138 @@
+
+.full-width {
+  // width: 400px;
+}
+
+.custom-range-field {
+
+  /* main input box */
+  .mat-mdc-text-field-wrapper {
+
+    min-height: 48px !important;
+
+    border-radius: 16px !important;
+
+    background: #fff;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+
+    transition: all 0.2s ease;
+
+  }
+
+  /* hover */
+  .mat-mdc-text-field-wrapper:hover {
+    border-color: #cbd5e1;
+  }
+
+  /* focus (remove green + set blue) */
+  &.mat-focused .mat-mdc-text-field-wrapper {
+
+    border-color: green;
+
+    box-shadow: 0 0 0 3px rgba(56, 128, 255, 0.12);
+
+  }
+
+  /* label */
+  .mat-mdc-floating-label {
+    font-weight: 600;
+  }
+
+}
+
+/* inputs */
+input {
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+
+}
+
+/* separator */
+.range-separator {
+
+  padding: 0 6px;
+  color: #9ca3af;
+
+}
+
+/* suffix buttons */
+.suffix-actions {
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+}
+
+/* icon buttons */
+.icon-btn {
+
+  width: 35px;
+  height: 36px;
+margin: 4px; /* to offset the padding of the input field */
+  // display: flex;
+  border-radius: 10px;
+background:#fff;
+//  color: #fff;
+  // transition: 0.2s;
+
+}
+.icon-btn-close{
+  width: 34px;
+  height: 35px;
+// margin: 4px; /* to offset the padding of the input field */
+  // display: flex;
+  border-radius: 10px;
+ background: #fff;
+ color: red;
+
+  transition: 0.2s;
+}
+
+// .icon-btn:hover {
+//   background: rgba(56, 128, 255, 0.08);
+// }
+
+/* remove ugly outline borders */
+.mdc-notched-outline__leading,
+.mdc-notched-outline__notch,
+.mdc-notched-outline__trailing {
+  border: none !important;
+}
+input{
+  font-size: 16px;
+}
+
+/* When the field is focused */
+::ng-deep .custom-range-field.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  color: green;       /* outline stroke */
+  border-color: green; /* fallback */
+}
+
+/* Floating label also green when focused */
+::ng-deep .custom-range-field.mat-form-field-appearance-outline.mat-focused .mat-form-field-label {
+  color: green;
+}
+custom-picker{
+  width: 400px;
+}
+.year-select {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}

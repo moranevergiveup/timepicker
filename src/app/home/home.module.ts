@@ -5,6 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { MaskitoDirective } from '@maskito/angular';
+import { DateRangePickerComponent } from '../components/date-range-picker/date-range-picker.component';
+
+
 
 
 @NgModule({
@@ -12,7 +16,9 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+     MaskitoDirective,
+     DateRangePickerComponent
   ],
   declarations: [HomePage]
 })
